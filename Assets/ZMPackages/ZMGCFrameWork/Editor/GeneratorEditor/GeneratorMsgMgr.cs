@@ -31,7 +31,6 @@ public class GeneratorMsgCtrl
         //var writer = File.CreateText(scriptFile);
         sb.AppendLine("/*--------------------------------------------------------------------------------------");
         sb.AppendLine("* Title: 网络消息层脚本自动生成工具");
-        sb.AppendLine("* Author: 铸梦xy");
         sb.AppendLine("* Date:" + System.DateTime.Now);
         sb.AppendLine("* Description:网络消息层,主要负责游戏网络消息的收发");
         sb.AppendLine("* Modify:");

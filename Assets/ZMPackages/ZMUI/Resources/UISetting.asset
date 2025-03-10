@@ -19,8 +19,4 @@ MonoBehaviour:
   FindComponentGeneratorPath: Assets/ThirdParty/ZMUIFrameWork/Scripts/FindCompoent
   WindowGeneratorPath: Assets/Scripts/UI
   WindowPrefabFolderPathArr:
-  - Assets/GameData/Battle/Prefabs/Window
-  - Assets/GameData/Hall/Prefabs/Window
-  - Assets/GameData/ShuangKou/Prefabs/Window
-  - Assets/GameData/WuZhang/Prefab/Window
-  - Assets/GameData/TestWorld/Prefab/Window
+  - Assets/GameData/HallWorld/Prefab/Window

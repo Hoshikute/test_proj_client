@@ -1,7 +1,6 @@
 ﻿/*----------------------------------------------------------------------------
 * Title: ZMUIFrameWork 一款Mono分离式UI管理框架
 *
-* Author: 铸梦xy
 *
 * Date: 2024/09/01 14:15:58
 *
@@ -14,6 +13,7 @@
 ----------------------------------------------------------------------------*/
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 [CreateAssetMenu(fileName = "WindowConfig", menuName = "WindowConfig", order = 0)]
 public class WindowConfig : ScriptableObject

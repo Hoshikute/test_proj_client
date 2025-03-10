@@ -31,7 +31,7 @@ public class GeneratorLogicCtrl
         //var writer = File.CreateText(scriptFile);
         sb.AppendLine("/*--------------------------------------------------------------------------------------");
         sb.AppendLine("* Title: 业务逻辑脚本自动生成工具");
-        sb.AppendLine("* Author: 铸梦xy");
+        
         sb.AppendLine("* Date:" + System.DateTime.Now);
         sb.AppendLine("* Description:业务逻辑层,主要负责游戏的业务逻辑处理");
         sb.AppendLine("* Modify:");
