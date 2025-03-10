@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,7 +31,6 @@ public class GeneratorDataCtrl
         //var writer = File.CreateText(scriptFile);
         sb.AppendLine("/*--------------------------------------------------------------------------------------");
         sb.AppendLine("* Title: 数据脚本自动生成工具");
-        sb.AppendLine("* Author: 铸梦xy");
         sb.AppendLine("* Date:" + System.DateTime.Now);
         sb.AppendLine("* Description:数据层,主要负责游戏数据的存储、更新和获取");
         sb.AppendLine("* Modify:");
