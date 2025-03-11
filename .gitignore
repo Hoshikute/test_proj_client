@@ -23,7 +23,6 @@ ExportedObj/
 *.suo
 *.tmp
 *.user
-*.unity
 *.userprefs
 *.pidb
 *.booproj
@@ -41,3 +40,4 @@ ExportedObj/
 *.unitypackage
 *.unitypackage.meta
 *.app
+Assets/Scenes/SampleScene.unity
