@@ -7,63 +7,64 @@
 using UnityEngine.UI;
 using UnityEngine;
 using ZMUIFrameWork;
+using ZMGC.Hall;
 
-	public class LoginWindow:WindowBase
+public class LoginWindow : WindowBase
+{
+
+	public LoginWindowDataComponent dataCompt;
+
+	#region 声明周期函数
+	//调用机制与Mono Awake一致
+	public override void OnAwake()
 	{
-	
-		 public LoginWindowDataComponent dataCompt;
-	
-		 #region 声明周期函数
-		 //调用机制与Mono Awake一致
-		 public override void OnAwake()
-		 {
-			 dataCompt=gameObject.GetComponent<LoginWindowDataComponent>();
-			 dataCompt.InitComponent(this);
-			 base.OnAwake();
-		 }
-		 //物体显示时执行
-		 public override void OnShow()
-		 {
-			 base.OnShow();
-		 }
-		 //物体隐藏时执行
-		 public override void OnHide()
-		 {
-			 base.OnHide();
-		 }
-		 //物体销毁时执行
-		 public override void OnDestroy()
-		 {
-			 base.OnDestroy();
-		 }
-		 #endregion
-		 #region API Function
-		    
-		 #endregion
-		 #region UI组件事件
-		 public void OnAccountInputChange(string text)
-		 {
-		
-		 }
-		 public void OnAccountInputEnd(string text)
-		 {
-		
-		 }
-		 public void OnPasswordInputChange(string text)
-		 {
-		
-		 }
-		 public void OnPasswordInputEnd(string text)
-		 {
-		
-		 }
-		 public void OnConfirmButtonClick()
-		 {
-		
-		 }
-		 public void OnRegistButtonClick()
-		 {
-		
-		 }
-		 #endregion
+		dataCompt = gameObject.GetComponent<LoginWindowDataComponent>();
+		dataCompt.InitComponent(this);
+		base.OnAwake();
 	}
+	//物体显示时执行
+	public override void OnShow()
+	{
+		base.OnShow();
+	}
+	//物体隐藏时执行
+	public override void OnHide()
+	{
+		base.OnHide();
+	}
+	//物体销毁时执行
+	public override void OnDestroy()
+	{
+		base.OnDestroy();
+	}
+	#endregion
+	#region API Function
+
+	#endregion
+	#region UI组件事件
+	public void OnAccountInputChange(string text)
+	{
+
+	}
+	public void OnAccountInputEnd(string text)
+	{
+
+	}
+	public void OnPasswordInputChange(string text)
+	{
+
+	}
+	public void OnPasswordInputEnd(string text)
+	{
+
+	}
+	public void OnConfirmButtonClick()
+	{
+		HallWorld.GetExitsLogicCtrl<LoginLogicCtrl>()
+	}
+	public void OnRegistButtonClick()
+	{
+
+	}
+	#endregion
+}

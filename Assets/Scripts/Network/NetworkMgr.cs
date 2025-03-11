@@ -23,8 +23,8 @@ public class NetworkMgr:Singleton<NetworkMgr>
 
     public Session Connect(string ipPoint, NetworkProtocolType netType, Action success = null, Action fail=null, Action disConnected=null)
     {
-        mSession = mScene.Connect("127.0.0.1:20000",NetworkProtocolType.KCP,()=>{OnConnectSuccess();
-         success?.Invoke();},()=>{OnConnectFail();fail?.Invoke();},()=>{OnDisConnected();disConnected?.Invoke();},false);
+        mSession = mScene.Connect(ipPoint, netType, () => { OnConnectSuccess();
+        success?.Invoke(); }, () => { OnConnectFail(); fail?.Invoke(); }, () => { OnDisConnected(); disConnected?.Invoke(); }, false);
         return mSession;
     }
 

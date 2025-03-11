@@ -7,18 +7,23 @@
 ----------------------------------------------------------------------------------------*/
 namespace ZMGC.Hall
 {
-	public  class LoginLogicCtrl : ILogicBehaviour
+	public class LoginLogicCtrl : ILogicBehaviour
 	{
-	
-		 public  void OnCreate()
-		 {
-		
-		 }
-		
-		 public  void OnDestroy()
-		 {
-		
-		 }
-	
+
+		public void OnCreate()
+		{
+
+		}
+
+		public void OnDestroy()
+		{
+
+		}
+
+		public void GetToken(string account,string passward)
+		{
+
+		}
+
 	}
 }
