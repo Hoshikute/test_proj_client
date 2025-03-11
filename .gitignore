@@ -23,6 +23,7 @@ ExportedObj/
 *.suo
 *.tmp
 *.user
+*.unity
 *.userprefs
 *.pidb
 *.booproj

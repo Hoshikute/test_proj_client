@@ -103,11 +103,11 @@ public class GeneratorModuleWindow : EditorWindow
             }
         }
         string folder = "";
-        if (mFileName.Contains("Data"))
+        if (mFileName.Contains("DataMgr"))
             folder = mFolderArr[0];
-        else if (mFileName.Contains("Msg"))
+        else if (mFileName.Contains("MsgMgr"))
             folder = mFolderArr[1];
-        else if (mFileName.Contains("Logic"))
+        else if (mFileName.Contains("LogicCtrl"))
             folder = mFolderArr[2];
         mFilePath = $"{Application.dataPath}/{moduleConfig.savePath}/{moduleConfig.modules[index].moduleName}{folder}{mFileName}";
     }
