@@ -60,10 +60,16 @@ public class LoginWindow : WindowBase
 	}
 	public void OnConfirmButtonClick()
 	{
-		HallWorld.GetExitsLogicCtrl<LoginLogicCtrl>()
 	}
 	public void OnRegistButtonClick()
 	{
+		HallWorld.GetExitsLogicCtrl<LoginLogicCtrl>().RegistAccount(dataCompt.AccountInputField.text, dataCompt.PasswordInputField.text, (result) =>
+		{
+			if (result == "regist_succ")
+			{
+				WorldManager.CreateWorld<HallWorld>();
+			}
+		});
 
 	}
 	#endregion

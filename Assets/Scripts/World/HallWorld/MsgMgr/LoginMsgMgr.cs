@@ -5,6 +5,10 @@
 * Modify:
 * 注意:以下文件为自动生成，强制再次生成将会覆盖
 ----------------------------------------------------------------------------------------*/
+using System.Threading.Tasks;
+using Fantasy;
+using Fantasy.Async;
+
 namespace ZMGC.Hall
 {
 	public  class LoginMsgMgr : IMsgBehaviour
@@ -19,6 +23,15 @@ namespace ZMGC.Hall
 		 {
 		
 		 }
+
+		 public async FTask<RegistAccountResponse> SendRegistAccount(string account,string passward)
+		 {
+			RegistAccountRequest request = new RegistAccountRequest();
+			request.account = account;
+			request.passward = passward;
+			RegistAccountResponse response = await NetworkMgr.Instance.SendCallMsg<RegistAccountResponse>(request);
+			return response;
+		}
 	
 	}
 }

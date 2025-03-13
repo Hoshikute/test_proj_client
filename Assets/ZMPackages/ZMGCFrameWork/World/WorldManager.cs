@@ -71,7 +71,7 @@ public class WorldManager
         }
         //初始化当前游戏世界的程序集脚本
         TypeManager.InitlizateWorldAssemblies(world, GetBehaviourExecution(world));
-        world.OnCreate ();
+        world.OnCreate();
         mWorldList.Add(world);
         OnCreateWorldSuccessListener?.Invoke(CurWorldEnum);
 
